@@ -1,0 +1,3 @@
+astro_test_package/__pycache__/*
+astro_test_package.egg-info/*
+/astro*
