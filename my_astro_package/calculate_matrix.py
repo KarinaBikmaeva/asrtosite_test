@@ -4,6 +4,15 @@ import numpy as np
 
  
 def calculate_fire_matrix_from_binary_images( df, types_images_events = "events"):
+    """Рассчитывает матрицу активности астроцитов на основе бинарных изображений.
+
+    Args:
+        df (pandas.DataFrame): Датафрейм с данными для изображений.
+        types_images_events (str, optional): Тип событий, которые следует учитывать ("events" или "images"). По умолчанию "events".
+
+    Returns:
+        numpy.ndarray: Матрица активности астроцитов.
+    """
     df_type = df[df['status'] == types_images_events]
     images_array = []
     for index, row in df_type.iterrows():

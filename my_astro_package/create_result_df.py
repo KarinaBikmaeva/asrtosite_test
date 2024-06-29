@@ -4,7 +4,16 @@ from pathlib2 import Path
 import pandas as pd
 
 def create_result_dataframe(data_path, dataset_type, types_images_events="events"):
-    # df_areas = df[df['status'] == types_images_events]
+    """Создает датафрейм Pandas с результатами обработки изображений.
+
+    Args:
+        data_path (str): Путь к каталогу с изображениями.
+        dataset_type (str): Имя папки с изображениями.
+        types_images_events (str, optional): Тип событий, которые следует учитывать ("events" или "fire"). По умолчанию "events".
+
+    Returns:
+        pandas.DataFrame: Датафрейм с результатами обработки изображений.
+    """
     regions_count = []
     all = []
     for dataset_path in Path(data_path).iterdir():

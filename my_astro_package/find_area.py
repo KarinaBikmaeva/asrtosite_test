@@ -5,6 +5,16 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 
 def find_count_area(df, dataset_type, types_images_events="events"):
+    """Находит количество обнаруженных областей для каждого изображения в указанном каталоге.
+
+    Args:
+        df (pandas.DataFrame): Датафрейм с метаданными для изображений.
+        dataset_type (str): Имя папки с изображениями.
+        types_images_events (str, optional): Тип событий, которые следует учитывать ("events" или "images"). По умолчанию "events".
+
+    Returns:
+        pandas.DataFrame: Датафрейм с количеством обнаруженных областей для каждого изображения.
+    """
     df_type = df[df['status'] == types_images_events]
     regions_count = []
 

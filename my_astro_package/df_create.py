@@ -5,7 +5,15 @@ from tqdm import tqdm
 from pathlib2 import Path
 import glob 
 def create_df_for_dataset_type(data_path,dataset_type):
+    """Создает датафрейм Pandas с метаданными для изображений в указанном каталоге.
 
+    Args:
+        data_path (str): Путь к каталогу с изображениями.
+        dataset_type (str): Имя папки с изображениями.
+
+    Returns:
+        pandas.DataFrame: Датафрейм с метаданными для изображений.
+    """
     events_mask =  str(data_path / dataset_type / '**' / '*.png')
     file_names = glob.glob(events_mask)
    

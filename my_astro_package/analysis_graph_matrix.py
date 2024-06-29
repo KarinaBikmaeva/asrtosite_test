@@ -7,6 +7,16 @@ import save_chart
 import build_mat 
 import save_mat 
 def analysis(data_path, save_path, types_images_events="events"): 
+    """Анализирует изображения, создает графики и тепловые карты активности астроцитов.
+
+    Args:
+        data_path (str): Путь к каталогу с изображениями.
+        save_path (str): Путь к каталогу для сохранения результатов.
+        types_images_events (str, optional): Тип событий, которые следует учитывать ("events" или "images"). По умолчанию "events".
+
+    Returns:
+        None
+    """
   
     for dataset_path in Path(data_path).iterdir(): 
         dataset_type = dataset_path.name  # Имя папки как dataset_type 
