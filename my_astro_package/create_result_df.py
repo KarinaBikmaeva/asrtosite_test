@@ -2,7 +2,7 @@ import df_create
 import find_area
 from pathlib2 import Path
 import pandas as pd
-
+#r
 def create_result_dataframe(data_path, dataset_type, types_images_events="events"):
     """Создает датафрейм Pandas с результатами обработки изображений.
 
