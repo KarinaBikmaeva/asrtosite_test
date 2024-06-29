@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from pathlib2 import Path
+
 def build_graph(dataset_type, df_areas):  
     """Создает график количества обнаруженных областей в зависимости от времени.
 
