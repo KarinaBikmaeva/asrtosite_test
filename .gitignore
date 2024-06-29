@@ -1,2 +1,2 @@
 my_astro_package/__pycache__/
-astro/my_astro_package.egg-info/*
+my_astro_package.egg-info/
