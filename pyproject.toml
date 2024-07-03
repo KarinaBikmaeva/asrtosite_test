@@ -1,8 +1,10 @@
+[project]
 name = "my_astro_package"
-version = "0.0.1"
+version = "0.0.2"
+authors = [
+  {name="Karina Bikmaeva",  email="bikmaeva-karina@mail.ru"},
+]
 description = "Astro test package"
-authors = ["Karina Bikmaeva",  email="bikmaeva-karina@mail.ru" ]
-
 readme = "README.md"
 dependencies = [
   'opencv-python > 4',
