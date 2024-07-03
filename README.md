@@ -63,8 +63,9 @@
 
 ![2024-07-03_16-26-06](https://github.com/KarinaBikmaeva/astrosite_test/assets/171484912/22584ef6-840f-4884-ac0c-ec099ef32aa8)
 
- **Примеры вывода графика и изображения**
-![Пример вывода графика "количество областей на кадре в зависимости от времени".](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-26-26.png)
+**Примеры вывода графиков и изображений:**
 
- <img align="left"  src="https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-27-06.png">
+![2024-07-03_16-26-26](https://github.com/KarinaBikmaeva/astrosite_test/assets/171484912/13cf5376-1db3-49a4-ae10-92cf4ba7bca9)
+
+![2024-07-03_16-27-06](https://github.com/KarinaBikmaeva/astrosite_test/assets/171484912/7df03d2b-46ee-48e4-9fa4-3d9f6a0ed005)
 
