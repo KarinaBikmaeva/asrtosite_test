@@ -61,7 +61,7 @@
 
 **Для получения документации по указанному модулю, классу, функции, переменным можно использовать функцию help()**
 
-![Пример ииспользования функции help()](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-26-06.png)
+![2024-07-03_16-26-06](https://github.com/KarinaBikmaeva/astrosite_test/assets/171484912/22584ef6-840f-4884-ac0c-ec099ef32aa8)
 
  **Примеры вывода графика и изображения**
 ![Пример вывода графика "количество областей на кадре в зависимости от времени".](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-26-26.png)
