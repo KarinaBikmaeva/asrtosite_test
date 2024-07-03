@@ -67,5 +67,5 @@
 ![Пример вывода графика "количество областей на кадре в зависимости от времени".](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-26-26.png)
 
  **Примеры вывода изображения**
- <img align="left" width="100" height="100" src="https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-27-06.png">
+ <img align="left"  src="https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-27-06.png">
 
