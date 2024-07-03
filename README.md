@@ -60,11 +60,13 @@
    ```
 
 **Для получения документации по указанному модулю, классу, функции, переменным можно использовать функцию help()**
-![Пример ииспользования функции help()](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-26-06.png)[align="center"]
+<div align="center">
+![Пример ииспользования функции help()](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-26-06.png)
+</div >
 
  **Примеры вывода графика**
-![Пример вывода графика "количество областей на кадре в зависимости от времени".](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-26-26.png)[align="center"]
+![Пример вывода графика "количество областей на кадре в зависимости от времени".](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-26-26.png)
 
  **Примеры вывода изображения**
-![Пример вывода изображения на основе двумерной матрицы:для каждого пикселя 1 – если пиксель горел хотя бы раз за все время видео, 0 – иначе.](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-27-06.png)[align="center"]
+![Пример вывода изображения на основе двумерной матрицы:для каждого пикселя 1 – если пиксель горел хотя бы раз за все время видео, 0 – иначе.](https://github.com/KarinaBikmaeva/astrosite_test/blob/main/2024-07-03_16-27-06.png)
 
