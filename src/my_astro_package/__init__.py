@@ -7,4 +7,3 @@ from .calculate_matrix import calculate_fire_matrix_from_binary_images
 from .build_mat import build_matrix
 from .save_mat import save_matrix
 from .analysis_graph_matrix import analysis
-from .create_result_df import create_result_dataframe

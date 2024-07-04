@@ -28,7 +28,7 @@ def build_matrix(dataset_type, fire_matrix):
     rect = patches.Rectangle((0, 0), cols-1, rows-1, linewidth=border_width, edgecolor=border_color, facecolor='none')
     ax.add_patch(rect)
     # Шкала
-    scalebar = ScaleBar(dx = 0.196,units = "um",location='lower right', scale_loc="top", border_pad=0.2,sep=1, length_fraction = 0.3)  # Шкала в 10 мм
+    scalebar = ScaleBar(dx=0.196, units="um", location='lower right', scale_loc="top", border_pad=0.2, sep=1, length_fraction=0.3)
     ax.add_artist(scalebar)
     plt.show()
     return fig

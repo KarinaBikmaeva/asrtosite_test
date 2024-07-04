@@ -4,7 +4,7 @@ from tqdm import tqdm
 from pathlib2 import Path
 import glob
 
-def create_df_for_dataset_type(data_path,dataset_type):
+def create_df_for_dataset_type(data_path, dataset_type):
     """Создает датафрейм Pandas с метаданными для изображений в указанном каталоге.
 
     Args:
@@ -16,7 +16,6 @@ def create_df_for_dataset_type(data_path,dataset_type):
     """
     events_mask =  str(data_path / dataset_type / '**' / '*.png')
     file_names = glob.glob(events_mask)
-   
     data = []
     for file_path in tqdm(file_names):
         file_path = Path(file_path)
@@ -26,21 +25,7 @@ def create_df_for_dataset_type(data_path,dataset_type):
         status = file_path.parents[0].stem
         image = cv2.imread(str(file_path))
         data_size= image.shape
-        data = ([image_name, 
-                name, 
-                dataset_type, 
-                data_size, 
-                str(file_path), 
-                status, 
-                int(frame_id)])
-        data.append
-
-    columns = ['image_name', 
-               'name', 
-               'dataset_type', 
-               'data_size', 
-               'file_path', 
-               'status', 
-               'frame_id']
+        data.append([image_name, name, dataset_type, data_size, str(file_path), status, int(frame_id)])
+    columns = ['image_name', 'name', 'dataset_type', 'data_size', 'file_path', 'status', 'frame_id']
     df = pd.DataFrame(data, columns=columns)
     return df.sort_values(by = 'frame_id')
