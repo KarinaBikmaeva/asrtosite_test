@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from pathlib2 import Path
+
 def build_graph(dataset_type, df_areas):  
     """Создает график количества обнаруженных областей в зависимости от времени.
 
@@ -11,7 +12,7 @@ def build_graph(dataset_type, df_areas):
         matplotlib.figure.Figure: График.
     """  
     folder_name = Path(dataset_type).name
-    fig = plt.figure(figsize=(7.27, 3.56), dpi = 300)
+    fig = plt.figure(figsize=(7.27, 3.56), dpi=300)
     time = df_areas['image_index'] / 120
     areas = df_areas['area'] 
     x_min, x_max = time.min(), time.max()

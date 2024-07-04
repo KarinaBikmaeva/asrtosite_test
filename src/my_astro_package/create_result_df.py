@@ -3,32 +3,34 @@ import pandas as pd
 from .df_create import create_df_for_dataset_type
 from .find_area import find_count_area 
 
-def create_result_dataframe(data_path, dataset_type, types_images_events="events"):
-    """Создает датафрейм Pandas с результатами обработки изображений.
+def create_result_dataframe(data_path, save_path):
+    """Создает DataFrame с результатами анализа и сохраняет его в Excel.
 
     Args:
-        data_path (str): Путь к каталогу с изображениями.
-        dataset_type (str): Имя папки с изображениями.
-        types_images_events (str, optional): Тип событий, которые следует учитывать ("events" или "fire"). По умолчанию "events".
+        data_path (str): Путь к директории с данными.
+        save_path (str, optional): Путь к файлу для сохранения результата. 
+                                        Defaults to 'graphs2.xlsx'.
 
     Returns:
-        pandas.DataFrame: Датафрейм с результатами обработки изображений.
+        pd.DataFrame: DataFrame с результатами.
     """
     regions_count = []
     all = []
+
     for dataset_path in Path(data_path).iterdir():
-        dataset_type = dataset_path.name  # Имя папки как dataset_type
+        dataset_type = dataset_path.name
         df = create_df_for_dataset_type(data_path, dataset_type)
-        df_areas = find_count_area(df, dataset_type, types_images_events=types_images_events)
-        regions_count = df_areas['image_index'] 
+        df_areas = find_count_area(df, dataset_type)
+        regions_count = df_areas['image_index']
         df_areas['frame_id'] = df['frame_id']
         time = df_areas['frame_id'] / 120
+
         df_areas = pd.DataFrame({
             'video': dataset_type,
             'time': time,
             'area': regions_count
         })
         all.append(df_areas)
-    df_areas = pd.concat(all, ignore_index = True) 
-    df_areas.to_excel(f'C:\\Users\\HP\\Documents\\scientific_programming\\astro\\graphs2.xlsx', index=True)
+    df_areas = pd.concat(all, ignore_index=True)
+    df_areas.to_excel(save_path, index=True)
     return df_areas

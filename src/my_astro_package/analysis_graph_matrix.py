@@ -7,9 +7,8 @@ from .save_chart import save_graph
 from .calculate_matrix import calculate_fire_matrix_from_binary_images
 from .build_mat import build_matrix
 from .save_mat import save_matrix
-from .create_result_df import create_result_dataframe
 
-def analysis(data_path, save_path, types_images_events="events"):
+def analysis(data_path, save_path):
     """Анализирует изображения, создает графики и тепловые карты активности астроцитов.
 
     Args:
@@ -20,12 +19,11 @@ def analysis(data_path, save_path, types_images_events="events"):
     Returns:
         None
     """
-
     for dataset_path in Path(data_path).iterdir():
         dataset_type = dataset_path.name  
         df = create_df_for_dataset_type(data_path, dataset_type)  
-        df_areas = find_count_area(df, dataset_type, types_images_events=types_images_events)  
-        fire_matrix = calculate_fire_matrix_from_binary_images(df, 'events')  
+        df_areas = find_count_area(df, dataset_type)  
+        fire_matrix = calculate_fire_matrix_from_binary_images(df)  
 
         fig_graph = build_graph(dataset_type, df_areas)  
         save_graph(fig_graph, dataset_type, save_path)  

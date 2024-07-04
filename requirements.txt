@@ -3,6 +3,6 @@ numpy == 1.24.3
 pandas == 2.0.1
 tqdm == 4.65.0
 matplotlib == 3.7.2
-matplotlib-scalebar = 0.8.1
+matplotlib-scalebar == 0.8.1
 glob2 == 0.7
 pathlib2 == 2.3.7.post1

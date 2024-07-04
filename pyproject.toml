@@ -8,6 +8,10 @@ description = "Astro test package"
 readme = "README.md"
 dependencies = [
   'opencv-python > 4',
+  pandas>=1.5.0,
+  numpy>=1.24.0,
+  matplotlib>=3.7.0,
+  pathlib2>=2.3.6
 ]
 
 requires-python = ">=3.8"
